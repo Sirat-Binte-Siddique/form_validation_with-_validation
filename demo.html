@@ -84,7 +84,34 @@
         </div>
         <div class="col-md-3"></div>
     </div>
-
+ <style>
+        .controls .error {
+            color: red;
+        }
+        
+        .controls .valid {
+            color: green;
+        }
+        
+        .input-group input:focus {
+            border: 1px solid #FF3300;
+            box-shadow: 0 1px 0 0 #FF3300;
+        }
+        
+        .input-group input.valid {
+            border: 1px solid #009933;
+            box-shadow: 0 1px 0 0 #009933;
+        }
+        
+        .input-group input.error {
+            border: 1px solid #FF3300;
+            box-shadow: 0 1px 0 0 #FF3300;
+        }
+        
+        .input-group .prefix.active {
+            color: #000;
+        }
+    </style>
     <script>
         $('#contact-form').validate({
             rules: {
